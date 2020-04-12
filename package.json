@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "ng serve --configuration=en --open",
+    "dev": "ng serve --configuration=en --open --liveReload=true",
     "start:es": "ng serve --configuration=es --open",
     "extract-i18n": "ng xi18n angularexampleapp --i18n-format xlf --output-path i18n --i18n-locale en && ngx-extractor --input=\"src/**/*.ts\" --format=xlf --out-file=src/i18n/messages.xlf && ng run angularexampleapp:xliffmerge",
     "lint": "tslint --project tslint.json",
@@ -85,7 +86,6 @@
     "@angular/compiler-cli": "8.0.2",
     "@angular/language-service": "8.0.2",
     "@angular/material": "8.0.1",
-    "@ismaestro/ngx-example-library": "1.0.0",
     "@ngx-i18nsupport/ngx-i18nsupport": "1.1.5",
     "@types/html2canvas": "0.0.35",
     "@types/jasmine": "3.3.13",

@@ -9,7 +9,8 @@ import {HeaderComponent} from './components/header/header.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {HeroCardComponent} from './components/hero-card/hero-card.component';
-import {NgxExampleLibraryModule} from '@ismaestro/ngx-example-library';
+// import {NgxExampleLibraryModule} from '@ismaestro/ngx-example-library';
+import { SampleLibModule } from 'sample-lib'
 import {HeroLoadingComponent} from './components/hero-loading/hero-loading.component';
 import {NgxScrollToFirstInvalidModule} from '@ismaestro/ngx-scroll-to-first-invalid';
 import {LoadingPlaceholderComponent} from './components/loading-placeholder/loading-placeholder.component';
@@ -23,7 +24,8 @@ import {LazyLoadImageModule} from 'ng-lazyload-image';
     FlexLayoutModule,
     ReactiveFormsModule,
     RouterModule,
-    NgxExampleLibraryModule,
+    // NgxExampleLibraryModule,
+    SampleLibModule,
     NgxScrollToFirstInvalidModule,
     LazyLoadImageModule
   ],
@@ -41,7 +43,8 @@ import {LazyLoadImageModule} from 'ng-lazyload-image';
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
-    NgxExampleLibraryModule,
+    // NgxExampleLibraryModule,
+    SampleLibModule,
     HeaderComponent,
     SearchBarComponent,
     FooterComponent,

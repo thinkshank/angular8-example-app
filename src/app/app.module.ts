@@ -4,7 +4,8 @@ import {CoreModule} from './modules/core/core.module';
 import {AppComponent} from './app.component';
 import {APP_CONFIG, AppConfig} from './configs/app.config';
 import {SharedModule} from './shared/shared.module';
-import {NgxExampleLibraryModule} from '@ismaestro/ngx-example-library';
+// import {NgxExampleLibraryModule} from '@ismaestro/ngx-example-library';
+import {SampleLibModule} from 'sample-lib';
 import {FirebaseModule} from './shared/modules/firebase.module';
 import {SentryErrorHandler} from './modules/core/sentry.errorhandler';
 import {BrowserModule, ɵgetDOM} from '@angular/platform-browser';
@@ -21,6 +22,7 @@ import {ENDPOINTS_CONFIG, EndpointsConfig} from './configs/endpoints.config';
 import {LazyLoadImageModule} from 'ng-lazyload-image';
 import {RouterModule} from '@angular/router';
 import {PrebootModule} from 'preboot';
+// import { SampleLibModule } from 'projects/sample-lib/src/public-api';
 
 declare const require;
 
@@ -54,11 +56,12 @@ export function appInitializer(document: HTMLDocument, platformId: object) {
     BrowserAnimationsModule,
     CookieModule.forRoot(),
     FirebaseModule,
-    NgxExampleLibraryModule.forRoot({
-      config: {
-        say: 'hello'
-      }
-    }),
+    // NgxExampleLibraryModule.forRoot({
+    //   config: {
+    //     say: 'hello'
+    //   }
+    // }),
+    SampleLibModule,
     LazyLoadImageModule.forRoot({}),
     CoreModule,
     SharedModule,

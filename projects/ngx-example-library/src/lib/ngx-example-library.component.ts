@@ -5,7 +5,7 @@ const moment = moment_;
 
 @Component({
   selector: 'lib-ngx-example-library',
-  template: `<span>{{date}}</span>`
+  template: `<span><u>{{date}}</u></span>`
 })
 export class NgxExampleLibraryComponent implements OnInit {
   date: string;
